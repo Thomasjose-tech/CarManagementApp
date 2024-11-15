@@ -1,0 +1,76 @@
+/* Add new colors for the form */
+.add-car-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7; /* Lighter background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Add border for a softer look */
+}
+
+.add-car-form {
+  display: flex;
+  flex-direction: column; /* Align form elements vertically */
+}
+
+.add-car-form input,
+.add-car-form textarea {
+  padding: 10px;
+  margin: 10px 0; /* Space between input fields */
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Increase font size for readability */
+  background-color: #ffffff; /* White background for inputs */
+}
+
+/* Style for the file input */
+.add-car-form input[type="file"] {
+  padding: 5px;
+  background-color: #e6f7ff; /* Light blue background for the file input */
+}
+
+button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px; /* Space before the button */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Image Grid Section */
+.car-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 15px; /* Space between the images */
+  margin-top: 20px;
+}
+
+.car-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Add smooth scaling effect */
+}
+
+.car-images img:hover {
+  transform: scale(1.1); /* Enlarge image on hover */
+  z-index: 2; /* Bring the image to the front */
+}
+
+/* Style for the selected image (clicked image) */
+.selected-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 3px solid #4caf50; /* Highlight selected image with border */
+}

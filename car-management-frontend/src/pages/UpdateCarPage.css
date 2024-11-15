@@ -1,0 +1,120 @@
+/* Container for the form */
+.update-car-form-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title of the form */
+  .update-car-form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;  /* Make the title text white */
+    background-color: #007bff;  /* Optional: Add a background color for the title */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .update-car-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Group for each input field */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Label styling */
+  label {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;  /* Full width */
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+  
+  /* Input and textarea fields */
+  input,
+  textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;  /* Ensure inputs match the width of the labels */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Focus styles for input/textarea */
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);  /* Slight lift effect */
+  }
+  
+  /* Button active effect */
+  button:active {
+    background-color: #003f7f;
+    transform: translateY(0);  /* Return to normal state */
+  }
+  
+  /* Styling for small error or helper messages */
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Style for the form's submit button when disabled */
+  button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+  }
+  
+  /* Optional: Add spacing for larger screens */
+  @media (min-width: 768px) {
+    .update-car-form-container {
+      padding: 40px;
+    }
+  
+    .form-group label {
+      font-size: 18px;
+    }
+  }
+  
